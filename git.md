@@ -34,6 +34,6 @@ git reset [file]
 ```
 ##### 7⃣️Records staged snapshots in version history
 ```shell
-git commit -m [descriptive message]
+git commit -m 'descriptive message'
 ```
 
