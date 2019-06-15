@@ -60,6 +60,7 @@ git diff [first-branch]...[second-branch]
 ```shell
 git show [commit]
 ```
+
 ####  👋CANCEL AND REDO STUFFS
 #####  1⃣️Discards all history and changes back to the specified commit
 ```shell
@@ -77,6 +78,12 @@ git reset -hard HEAD^ 上一个提交版本
 git reset --hard HEAD~2  回滚到上两个提交版本
 git commit --amend -m 'last updated commit message' 修改提交版本信息
 ```
+
+#####   4⃣️查看过去的提交的版本ID
+```shell
+git reflog
+```
+
 
 
 
