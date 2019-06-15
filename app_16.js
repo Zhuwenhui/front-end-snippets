@@ -7,9 +7,9 @@ var req = https.request({
   path: '/visionmedia-node-jscoverage-0d4608a.zip'
 });
  
+
 req.on('response', function(res){
   var len = parseInt(res.headers['content-length'], 10);
- 
   console.log();
   var bar = new ProgressBar('  downloading [:bar] :rate/bps :percent :etas', {
     complete: '=',
