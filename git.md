@@ -40,9 +40,7 @@ git commit -m 'descriptive message'
 Records staged and commit
 git commit -a -m "descriptive message" 
 ```
-
 #### 👋HISTORY AND DIFF
-
 #####  1⃣️Lists version history for the current branch
 ```shell
 git log 
@@ -66,25 +64,40 @@ git show [commit]
 ```shell
 git reset --hard [commit]
 ```
-
 #####  2⃣️Discards all local changes in the working directory (撤销Stage状态 还原到一切)
 ```shell
 git reset –hard HEAD
 ```
-
 #####  3⃣️回滚到上一个提交的版本
 ```shell
 git reset -hard HEAD^ 上一个提交版本
 git reset --hard HEAD~2  回滚到上两个提交版本
 git commit --amend -m 'last updated commit message' 修改提交版本信息
 ```
-
-#####   4⃣️查看过去的提交的版本ID
+#####   4⃣️查看过去的提交的版本ID 
 ```shell
 git reflog
 ```
+#####   5⃣️根据ID进行回滚操作
+```shell
+git reset --hard 8a60626
+git reset --hard HEAD@{2}
+```
+####     👋BRANCHES
+#####    1⃣️️进行单个文件的回滚操作
+```shell
+git checkout 57c7c20 -- git.md 
+```
+
+#####   2⃣️创建一个分支
+```shell
+git branch dev
+git checkout -b -dev
+```
 
 
+
+xxxxxx
 
 
 
