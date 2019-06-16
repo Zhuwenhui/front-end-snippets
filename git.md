@@ -95,9 +95,12 @@ git branch dev
 git checkout -b -dev
 ```
 
+#####   3⃣️切换branch
+```shell
+git checkout master
+```
 
 
-xxxxxx
 
 
 
