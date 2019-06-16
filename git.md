@@ -100,10 +100,10 @@ git checkout -b -dev
 git checkout master
 ```
 
-
-
-
-
+#####   3⃣️合并分支
+```shell
+git merge --no-ff -m 'keep merge info' dev
+```
 
 
 
